@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: gray;
+  font-family: Bebas Neue;
+}
+
+.container-pai {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px 0;
+}
+
+/*configurando o navbar para colocar a logo e menu*/
+
+.container-pai .navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+/*ajustando a posição,tamanho e largura da logo e menu*/
+.container-pai .navbar .logo,
+.links {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+/*ajustando o tamanho da  logo*/
+.container-pai .navbar .logo img {
+  height: 100%;
+}
+
+/*ajustando a posição do menu*/
+.container-pai .navbar .links {
+  display: flex;
+  justify-content: center;
+}
+
+/*ajustando a formatação do menu*/
+.container-pai .navbar .links ul {
+  font-size: 25px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 0 55px;
+  font-family: Bebas Neue;
+}
+
+.container-pai .navbar .links ul li:hover {
+  color: rgb(219, 9, 9);
+  font-weight: 700;
+}
+/*iniciando o trabalho com o conteudo que ficara centralizado no meio text/photo*/
+
+.container-pai .container-agrupador {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  gap: 20px 0;
+  align-items: center;
+  width: 80%;
+  height: 500px;
+  margin: 2% auto;
+}
+
+.container-pai .container-agrupador .text,
+.photo {
+  width: 50%;
+  height: 100%;
+}
+
+.container-pai .container-agrupador .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 20px 0 0;
+  height: 100%;
+  gap: 30px 0;
+}
+
+.container-agrupador h1,
+span {
+  color: black;
+  font-size: 48px;
+}
+
+.container-agrupador span {
+  font-weight: 700;
+  font-size: 58px;
+}
+
+.container-agrupador button {
+  width: 30%;
+  height: 45px;
+  color: white;
+  background-color: rgba(224, 19, 19, 0.928);
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.container-pai .container-agrupador .photo img {
+  display: flex;
+  margin: 0;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+}

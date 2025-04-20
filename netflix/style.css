@@ -1,0 +1,134 @@
+/*configuração padrao*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+}
+
+/*configurando o container navbar*/
+.container-pai .navbar {
+  display: flex;
+  margin: 0;
+  padding: 10px 40px;
+  width: 100%;
+  height: 100px;
+}
+
+/*configurando posição do div left dentro do container navbar*/
+.container-pai .navbar .container-left {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  height: auto;
+}
+
+/*configurando posição a logo  dentro do container left*/
+.container-pai .navbar .container-left img {
+  display: flex;
+  width: 225px;
+  height: 105%;
+}
+
+/*configurando posição do div left dentro do container navbar*/
+.container-pai .navbar .container-rigth {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+  height: auto;
+}
+
+/*configurando seleção de idiomas e login no div left*/
+.container-pai .navbar .container-rigth select,
+button {
+  height: 45%;
+  width: 22%;
+  padding: 5px;
+  font-size: 20px;
+  color: white;
+}
+
+/*configurando seleção de idiomas no div left*/
+.container-pai .navbar .container-rigth select {
+  background-color: transparent;
+}
+.container-pai .navbar .container-rigth option {
+  background-color: gray;
+}
+
+.container-pai .navbar .container-rigth button {
+  background-color: rgb(210, 34, 34);
+  width: 15%;
+  height: 40%;
+  font-size: 17px;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.container-pai::before {
+  content: "";
+  background: url(imagens/netflix-bg.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 110%;
+  position: absolute;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.container-pai .content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 350px;
+  margin: auto;
+  padding: 2px 15px;
+}
+
+h1 {
+  font-size: 55px;
+  margin: 5px auto;
+  color: white;
+}
+
+h2 {
+  font-size: 34px;
+  margin: 5px auto;
+  color: white;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 5px auto;
+  color: white;
+}
+
+.container-pai .content form {
+  width: 100%;
+  height: 70px;
+  display: flex;
+}
+
+.container-pai .content #email {
+  width: 80%;
+  height: 80%;
+  border: none;
+  padding: 5px;
+  outline: none;
+}
+
+.container-pai .content #button {
+  width: 20%;
+  height: 80%;
+  background-color: red;
+  color: white;
+  font-size: 25px;
+  border: none;
+}

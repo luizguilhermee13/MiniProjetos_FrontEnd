@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linkedin copia</title>
+
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/256/174/174857.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- cor fundo  e cor icones gray   -->
+  <body class="bg-[#f3f2ef]">
+    <!-- criando o container pai e colocando  -->
+    <div class="container grid grid-rows-[1fr_10fr] min-h-screen max-w-screen">
+      <!-- container header - onde ficara todo conteudo do header  -->
+      <div
+        class="header-container w-full justify-around flex items-center p-1 bg-white"
+      >
+        <div class="search flex h-[2em] gap-3 px-20 items-center">
+          <img
+            class="h-[2em]"
+            src="https://cdn-icons-png.flaticon.com/256/174/174857.png"
+            alt="iconelinkedin"
+          />
+          <div class="bg-gray-200 flex items-center rounded-x">
+            <i class="material-icons"> search </i>
+            <input class="h-[2em] s" type="search" />
+          </div>
+        </div>
+
+        <div
+          class="icones flex gap-6 items-center text-sm text-gray-600 pl-35 cursor-pointer"
+        >
+          <div class="icones-son flex flex-col items-center">
+            <i class="material-icons hover:text-black"> home </i>
+            <span>home </span>
+          </div>
+
+          <div class="icones-son flex flex-col items-center">
+            <i class="material-icons hover:text-black"> supervisor_account </i>
+            <span>Minha rede</span>
+          </div>
+
+          <div class="icones-son flex flex-col items-center">
+            <i class="material-icons hover:text-black"> business_center </i>
+            <span>Vagas</span>
+          </div>
+
+          <div class="icones-son flex flex-col items-center">
+            <i class="material-icons hover:text-black"> chat </i>
+            <span>Mensagens</span>
+          </div>
+
+          <div class="icones-son flex flex-col items-center">
+            <i class="material-icons hover:text-black"> notifications </i>
+            <span>Notificações</span>
+          </div>
+
+          <div class="icones-son flex flex-col items-center">
+            <i class="material-icons hover:text-black"> account_circle </i>
+            <span>Eu</span>
+          </div>
+        </div>
+        <div
+          class="menu flex gap-6 items-center border-l-1 px-4 border-l-gray-300"
+        >
+          <div class="icones-son flex flex-col items-center cursor-pointer">
+            <i class="material-icons hover:text-black"> apps </i>
+            <span>Para Negocios</span>
+          </div>
+          <span class="text-[12px] text-wrap text-[#b8925f] underline"
+            ><a href=""
+              >Experimente Premium <br />
+              novamente por BRL0</a
+            ></span
+          >
+        </div>
+      </div>
+      <!--  fim do container header - onde se encerra o conteudo do header  -->
+      <!--  inicio do container content onde ficara os divs responsaveis pelo div sidebar,main e links -->
+      <div
+        class="content-container grid grid-cols-[1fr_2.5fr_1fr] bg-[#f3f2ef] p-5 gap-2"
+      >
+        <!--  inicio do container sidebar  -->
+        <div class="content-sidebar flex flex-col gap-2 rounded-xl">
+          <div
+            class="card-usuary w-full h-auto flex flex-col rounded-2xl gap-1 bg-white"
+          >
+            <div class="usuary-header">
+              <img
+                src="fundosidebar.png"
+                alt="fundousuary"
+                class="w-full h-[3.0em]"
+              />
+              <i
+                class="material-icons text-gray-400 ml-10 scale-230 relative top-[-12px] bg-gray-200 rounded-full border-1 border-dashed border-[#b8c5d0]"
+                >person</i
+              >
+            </div>
+            <div class="usuary-body p-2 flex flex-col">
+              <h3 class="text-xl font-semibold">Luiz Guilherme</h3>
+              <p class="text-sm">Bacharel em Sistemas de Informação</p>
+
+              <p class="text-gray-400 text-sm">São Paulo</p>
+            </div>
+            <div class="usuary-footer p-2 flex items-center">
+              <i class="material-icons text-[#b8c5d0]">image</i>Auto Nossa
+              Senhora Aparecida
+            </div>
+          </div>
+
+          <div class="card-conections p-3 bg-white rounded-xl">
+            <div class="conection-top flex justify-between">
+              <p>Conexões</p>
+              <p class="text-blue-800">2</p>
+            </div>
+            <div class="conection-bottom">
+              <p class="text-gray-400 text-sm">Amplie sua Rede</p>
+            </div>
+          </div>
+
+          <div class="card-premium p-3 bg-white rounded-xl">
+            <div class="conection-top flex flex-col">
+              <p class="text-gray-400 text-sm">
+                Receba 4x mais visualizações no seu perfil
+              </p>
+              <div class="flex items-center gap-2">
+                <i class="material-icons text-[#b8925f]">image</i>
+                <p class="text-sm">
+                  Experimente Premium <br />
+                  novamente por BRL0
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-icones p-3 bg-white gap-2 flex flex-col rounded-xl">
+            <div class="icones flex items-center gap-2">
+              <i class="material-icons hover:text-black"> bookmark </i>
+              <span> Itens salvos </span>
+            </div>
+            <div class="icones flex items-center gap-2">
+              <i class="material-icons hover:text-black"> groups </i>
+              <span>Grupos </span>
+            </div>
+            <div class="icones flex items-center gap-2">
+              <i class="material-icons hover:text-black"> fiber_new </i>
+              <span>Newsletters </span>
+            </div>
+            <div class="icones flex items-center gap-2">
+              <i class="material-icons hover:text-black"> event </i>
+              <span>Eventos </span>
+            </div>
+          </div>
+        </div>
+        <!--  fim do container sidebar  -->
+        <!--  inicio do container posts  -->
+        <div class="posts border-1 border-blue-300 py-3 px-5">
+          <div class="Teste">
+            <div
+              class="posts-header flex flex-col justify-center w-full h-auto p-4 px-1 bg-white gap-6 rounded-md"
+            >
+              <div
+                class="post-search flex gap-4 w-full justify-center items-center"
+              >
+                <i class="material-icons scale-210">account_circle</i>
+                <input
+                  type="search"
+                  class="border-1 border-gray-300 rounded-3xl w-[86%] h-[3em]"
+                />
+              </div>
+              <div class="postsIcons flex justify-around items-center">
+                <div class="flex items-center gap-3">
+                  <i class="material-icons scale-130 text-blue-600">image</i>
+                  <span>Foto</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <i class="material-icons scale-130 text-green-600"
+                    >smart_display</i
+                  >
+                  <span>Video</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <i class="material-icons scale-130 text-orange-600"
+                    >article</i
+                  >
+                  <span>Escrever artigo</span>
+                </div>
+              </div>
+            </div>
+            <hr class="my-2" />
+            <div class="post-main bg-white py-4 px-6">
+              <hr class="text-gray-400" />
+              <div
+                class="post-main-header flex justify-stretch items-start w-full h-[20%]"
+              >
+                <div class="w-[10%] flex relative top-[25px]">
+                  <i class="material-icons scale-220">account_circle</i>
+                </div>
+
+                <div class="post-title flex flex-col w-[80%]">
+                  <h3 class="text-black text-lg font-medium">Fulano alves</h3>
+                  <span class="text-gray-400 text-sm"
+                    >Ciencia da computação | FrontEnd | Estagiario
+                  </span>
+                  <span class="flex items-center text-gray-400 text-sm"
+                    >1 D
+                    <i class="material-icons scale-60 text-black"
+                      >public</i
+                    ></span
+                  >
+                </div>
+                <span class="w-[10%] text-blue-800">+ Seguir </span>
+              </div>
+
+              <div class="post-body flex flex-col items-center gap-2 my-4">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Voluptates eos fuga ut praesentium, accusamus dolore! Ea ut
+                  laudantium provident molestiae iusto commodi non hic laborum,
+                  sunt aperiam! Nihil, nostrum explicabo?
+                </p>
+
+                <p class="self-end text-gray-600 text-sm">
+                  11 comentários 2 compartilhamentos
+                </p>
+              </div>
+              <hr class="text-gray-400" />
+
+              <div class="post-footer flex justify-around mt-3 text-gray-600">
+                <div class="footer-icons flex items-center gap-1">
+                  <i class="material-icons">thumb_up</i><span>Gostei</span>
+                </div>
+                <div class="footer-icons flex items-center gap-1">
+                  <i class="material-icons">chat</i><span>Comentar</span>
+                </div>
+                <div class="footer-icons flex items-center gap-1">
+                  <i class="material-icons">sync</i><span>Compartilhar</span>
+                </div>
+                <div class="footer-icons flex items-center gap-1">
+                  <i class="material-icons">send</i><span>Enviar</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--  fim do container posts  -->
+        <!--  inicio do container links  -->
+        <div class="links bg-white h-[75%] rounded-xl">
+          <div
+            class="links-title flex justify-between p-2 text-wrap font-semibold"
+          >
+            <h3 class="w-[60%] text-[22px]">
+              Temas em alta
+              <span class="text-gray-400 text-[17px]">
+                por linkedin notícias</span
+              >
+            </h3>
+            <i
+              class="material-icons bg-black text-white h-[30px] w-[22px] scale-65"
+              >priority_high</i
+            >
+          </div>
+          <div class="links-links flex flex-col p-2 text-md gap-1">
+            <div class="links-content">
+              <p>Ações pela equidade de gênero</p>
+              <p class="text-sm text-gray-400">há 3 d • 18.514 leitores</p>
+            </div>
+            <div class="links-content">
+              <p>Como destacar habilidades na entrevista</p>
+              <p class="text-sm text-gray-400">há 2 d • 16.562 leitores</p>
+            </div>
+            <div class="links-content">
+              <p>A pressão para dar conta de tudo</p>
+              <p class="text-sm text-gray-400">há 3 d • 11.839 leitores</p>
+            </div>
+
+            <div class="links-content">
+              <p>Comece antes de estar pronto</p>
+              <p class="text-sm text-gray-400">há 3 d • 11.410 leitores</p>
+            </div>
+
+            <div class="links-content">
+              <p>Newsletters de carreira da semana</p>
+              <p class="text-sm text-gray-400">há 2 d • 9.884 leitores</p>
+            </div>
+            <p class="text-md text-gray-600 font-medium flex items-center">
+              exibir mais <i class="material-icons">keyboard_arrow_down</i>
+            </p>
+          </div>
+        </div>
+        <!--  fim do container posts  -->
+      </div>
+      <!--  fim do container content onde ficara os divs responsaveis pelo div sidebar,main e links  -->
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </body>
+</html>

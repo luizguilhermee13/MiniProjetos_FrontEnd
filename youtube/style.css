@@ -1,0 +1,208 @@
+/* Resetando os espaços dos elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* O body ocupa 100% da tela e tem fundo preto */
+body {
+  width: 100%;
+  height: 100vh;
+  background: rgba(33, 33, 33, 0.98);
+  z-index: 1;
+  position: relative;
+  color: white; /*90% dos caracteres da pagina são brancos */
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  height: 100%;
+}
+
+/* ajustando o navbar */
+.navbar {
+  width: 100%;
+  height: 80px;
+  padding: 5px 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+}
+
+/* formantando os icones na navbar */
+
+.navbar .material-icons {
+  font-size: 35px;
+}
+
+/* formantando espacamento e tamanho das divs da navbar */
+.navbar .logo,
+.pesquisa,
+.icons {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* formantando a div pesquisa, definindo um tamanho da div */
+.navbar .pesquisa {
+  height: 50%;
+}
+
+/* formantando o input da div pesquisa */
+.navbar .pesquisa > input {
+  width: 40em;
+  height: 100%;
+}
+
+/* formantando o icone pesquisa da div pesquisa, levando em consideração o input */
+
+.navbar .pesquisa .ip {
+  background-color: rgba(170, 163, 163, 0.905);
+  margin-left: -20px;
+  padding: 1px;
+  width: 40px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  border-radius: 2px;
+}
+
+/* definindo um tamanho para sidebar e content */
+main .sidebar {
+  width: 300px;
+  height: 100%;
+}
+
+main .content {
+  width: 100vw;
+  height: 100%;
+}
+
+/* formantando a sidebar */
+.sidebar {
+  display: flex;
+  flex-flow: column nowrap;
+
+  padding: 2px 25px;
+  position: relative;
+}
+
+/* formantando os links do sidebar */
+
+.sidebar .links a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 2px 5px;
+}
+
+/* formantando os icones da sidebar e h4 */
+.sidebar i {
+  font-size: 25px;
+}
+
+.sidebar h4 {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: rgb(183, 174, 174);
+}
+
+/* formantando o espaçamento dos divs da sidebar */
+
+.sidebar .links {
+  top: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 2px;
+  margin: 8px auto;
+  gap: 12px;
+  border-bottom: 1px solid grey;
+}
+
+/* tirando a borda bottom da div 3*/
+.sidebar .links_3 {
+  border-bottom: none;
+}
+
+/* formantando o content */
+.content {
+  display: flex;
+  margin: 0;
+  flex-flow: column wrap;
+  margin: 20px auto;
+  align-items: center;
+  gap: 5px;
+}
+
+.content .container {
+  display: flex;
+  width: 235px;
+  height: 235px;
+  margin: 5px auto;
+}
+
+.content .container .card {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 2px;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgb(10, 10, 10);
+}
+
+.card .card-header {
+  width: 100%;
+  height: 60%;
+}
+
+.card .card-header > img {
+  width: 100%;
+  height: 100%;
+}
+
+.card .card-body {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px;
+  gap: 8px;
+}
+
+.card .card-body > img {
+  width: 20%;
+  height: 100%;
+}
+
+.card .card-body > span {
+  width: 80%;
+  height: 100%;
+  font-size: 14px;
+}
+
+.card .card-footer {
+  box-sizing: border-box;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-flow: column wrap;
+  color: rgb(123, 128, 133);
+  padding: 10px 5px;
+  font-size: 11.5px;
+}

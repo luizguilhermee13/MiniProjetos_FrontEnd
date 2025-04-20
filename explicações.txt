@@ -1,0 +1,3 @@
+projetos disponiveis no curso da CodiAcademy.
+
+após assistir as aulas reproduzi os sites na qual até o atual momento é só utilizando HTML e CSS puro, porem eu utilizei Tailwind em alguns projetos para praticar já que estava vendo em aula.
